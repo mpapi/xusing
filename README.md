@@ -63,7 +63,7 @@ title back to a string that indicates that we're back in the shell.
     preexec() {
       if [ "$(id -u)" -ne 0 ]
       then
-        printf '\033]2;%s\\033\\' "$1"
+        printf '\033]2;%s\033\\' "$1"
       fi
     }
 
